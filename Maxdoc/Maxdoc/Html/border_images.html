@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/phone.css" />
+    <title>Maxdoc</title>
+
+</head>
+<body>
+    <div class="container">
+      <p>Border Images</p>
+      <p>With the CSS3 border-image property, you can set an image to be used as the border around an element.</p>
+
+      <div style="
+  border: 10px solid transparent;
+  border-image: url(img/border.png) 30 round;
+  width:300px;
+  height:150px;
+  ">
+ <pre>
+  border: 10px solid transparent;
+  border-image: 
+   url(img/border.png) 30 round;
+  width:300px;
+  height:150px;
+</pre>
+      </div>
+
+
+
+      <ul>
+        Свойство border-image состоит из трех частей:
+        <li>Image который будет использоваться для заполнения границы</li>
+        <li>Как, в каком месте делить image</li>
+        <li>Определния того, будет ли средняя секция повторяться или растягиваться</li>
+      </ul>
+      <p>В примерах будет использоваться следующий image</p>
+      
+      <img src="img/border.png" alt="Border" style="width:81px;height:81px">
+      <p>Пример - середина картинки повторяется для создания границы: </p>
+      <div style="
+  border: 10px solid transparent;
+  padding: 15px;
+  -webkit-border-image: url(img/border.png) 30 round; /* Safari 3.1-5 */
+  -o-border-image: url(img/border.png) 30 round;  /* Opera 11-12.1 */
+  border-image: url(img/border.png) 30 round;
+  ">
+        <pre>
+  border: 10px solid transparent;
+  padding: 15px;
+  /* Safari 3.1-5 */
+  -webkit-border-image:
+     url(border.png) 30 round;
+ /* Opera 11-12.1 */ 
+  -o-border-image:
+     url(border.png) 30 round;
+  border-image:
+    url(border.png) 30 round;
+</pre>
+      </div>
+
+      <p>Середина картинки растягивается для создания границы: </p>
+      <div style="
+  border: 10px solid transparent;
+  padding: 15px;
+  -webkit-border-image: url(img/border.png) 30 stretch; /* Safari 3.1-5 */
+  -o-border-image: url(img/border.png) 30 stretch; /* Opera 11-12.1 */
+  border-image: url(img/border.png) 30 stretch;
+  ">
+        <pre>
+  border: 10px solid transparent;
+  padding: 15px;
+  /* Safari 3.1-5 */
+  -webkit-border-image:
+     url(border.png) 30 stretch; 
+  /* Opera 11-12.1 */
+  -o-border-image: 
+    url(border.png) 30 stretch;
+  border-image: 
+   url(border.png) 30 stretch;
+
+</pre>
+      </div>
+
+
+<p> url(img/border.png) 50 round</p>
+<div style="
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(img/border.png) 50 round; 
+    -o-border-image: url(img/border.png) 50 round; 
+    border-image: url(img/border.png) 50 round;
+  ">
+  <pre>
+ border: 10px solid transparent;
+ padding: 15px;
+ -webkit-border-image:
+   url(img/border.png) 50 round; 
+ -o-border-image:
+    url(img/border.png) 50 round; 
+ border-image:
+    url(img/border.png) 50 round;
+</pre>
+</div>
+
+
+ <p> url(img/border.png) 20 round</p>
+ <div style="
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(img/border.png) 20 round;
+    -o-border-image: url(img/border.png) 20 round;
+    border-image: url(img/border.png) 20 round;
+  ">
+        <pre>
+ border: 10px solid transparent;
+ padding: 15px;
+ -webkit-border-image:
+   url(img/border.png) 20 round; 
+ -o-border-image:
+    url(img/border.png) 20 round; 
+ border-image:
+    url(img/border.png) 20 round;
+</pre>
+      </div>
+
+
+<p> url(img/border.png) 30 round</p>
+      <div style="
+    border: 20px solid transparent;
+    padding: 25px;
+    -webkit-border-image: url(img/border2.png) 20 30 40 20  round;
+    -o-border-image: url(img/border2.png) 20 30 40 20  round;
+    border-image: url(img/border2.png) 20 30 40 20 round;
+  ">
+        <pre>
+ border: 10px solid transparent;
+ padding: 15px;
+ border-image:
+    url(img/border.png) 20 30 40 20 
+      round;
+</pre>
+      </div>
+
+
+<p>Свойства границы</p>
+<table>
+
+  <tr>
+    <th>Property</th>
+    <th>Description</th>
+  </tr>
+  <tr><td>border-image</td><td>A shorthand property for setting all the border-image-* properties</td></tr>
+  <tr><td>border-image-source</td><td>Specifies the path to the image to be used as a border</td></tr>
+  <tr><td>border-image-slice</td><td>Specifies how to slice the border image</td></tr>
+  <tr><td>border-image-width</td><td>Specifies the widths of the border image</td></tr>
+  <tr><td>border-image-outset</td><td>Specifies the amount by which the border image area extends beyond the border box</td></tr>
+  <tr><td>border-image-repeat</td><td>Specifies whether the border image should be repeated, rounded or stretched</td></tr>
+
+</table>
+  
+</div>
+</body>
+</html>
